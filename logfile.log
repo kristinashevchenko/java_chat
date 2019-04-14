@@ -1,0 +1,46 @@
+2019-04-14 17:23:48 INFO  Server:27 - Server started
+2019-04-14 18:35:25 INFO  Server:27 - Server started
+2019-04-14 18:36:19 INFO  Server:183 - Registration client cap
+2019-04-14 18:37:24 INFO  Server:185 - Registration agent cooper
+2019-04-14 18:37:24 INFO  Server:249 - Conversation of cooper with cap
+2019-04-14 18:37:48 INFO  Server:105 - The end of conversation cooper with cap
+2019-04-14 18:37:48 INFO  Server:249 - Conversation of cap with cooper
+2019-04-14 18:50:25 INFO  Server:27 - Server started
+2019-04-14 18:53:47 INFO  Server:183 - Registration client cap
+2019-04-14 18:58:43 INFO  Server:27 - Server started
+2019-04-14 18:58:54 INFO  Server:185 - Registration agent cooper
+2019-04-14 19:00:34 INFO  Server:183 - Registration client cap
+2019-04-14 19:01:11 INFO  Server:249 - Conversation of cap with cooper
+2019-04-14 19:01:37 INFO  Server:105 - The end of conversation cooper with cap
+2019-04-14 19:01:37 INFO  Server:249 - Conversation of cap with cooper
+2019-04-14 19:09:19 INFO  Server:27 - Server started
+2019-04-14 19:10:26 INFO  Server:185 - Registration agent cooper
+2019-04-14 19:11:43 INFO  Server:183 - Registration client cap
+2019-04-14 19:11:48 INFO  Server:249 - Conversation of cap with cooper
+2019-04-14 19:12:24 INFO  Server:105 - The end of conversation cap with cooper
+2019-04-14 19:12:24 INFO  Server:249 - Conversation of cooper with cap
+2019-04-14 19:12:33 INFO  Server:105 - The end of conversation cooper with cap
+2019-04-14 19:12:33 INFO  Server:249 - Conversation of cap with cooper
+2019-04-14 19:46:32 INFO  Server:27 - Server started
+2019-04-14 19:47:00 INFO  Server:183 - Registration client cap
+2019-04-14 19:57:51 INFO  Server:185 - Registration agent cooper
+2019-04-14 19:57:51 INFO  Server:249 - Conversation of cooper with cap
+2019-04-14 19:58:37 INFO  Server:183 - Registration client cap2
+2019-04-14 19:59:18 INFO  Server:185 - Registration agent cooper2
+2019-04-14 19:59:18 INFO  Server:249 - Conversation of cooper2 with cap2
+2019-04-14 19:59:28 INFO  Server:105 - The end of conversation cooper2 with cap2
+2019-04-14 19:59:28 INFO  Server:249 - Conversation of cap2 with cooper2
+2019-04-14 19:59:32 INFO  Server:105 - The end of conversation cap with cooper
+2019-04-14 19:59:32 INFO  Server:249 - Conversation of cooper with cap2
+2019-04-14 19:59:45 INFO  Server:105 - The end of conversation cooper with cap2
+2019-04-14 19:59:45 INFO  Server:249 - Conversation of cap2 with cooper
+2019-04-14 19:59:52 INFO  Server:105 - The end of conversation cap2 with cooper
+2019-04-14 19:59:52 INFO  Server:249 - Conversation of cooper with cap2
+2019-04-14 20:19:31 INFO  Server:27 - Server started
+2019-04-14 20:20:00 INFO  Server:185 - Registration agent cap
+2019-04-14 20:30:48 INFO  Server:183 - Registration client cap333
+2019-04-14 20:30:58 INFO  Server:249 - Conversation of cap333 with cap
+2019-04-14 20:33:33 INFO  Server:105 - The end of conversation cap333 with cap
+2019-04-14 20:33:33 INFO  Server:249 - Conversation of cap with cap333
+2019-04-14 20:33:43 INFO  Server:105 - The end of conversation cap with cap333
+2019-04-14 20:33:43 INFO  Server:249 - Conversation of cap333 with cap
