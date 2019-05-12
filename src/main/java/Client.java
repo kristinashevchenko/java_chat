@@ -38,10 +38,6 @@ public class Client {
                 str = scan.nextLine();
                 out.println(str);
             }
-//            while (true && !addThread.stoped) {
-//                str = scan.nextLine();
-//                out.println(str);
-//            }
             addThread.setStop();
 
         } catch (Exception e) {
@@ -87,7 +83,6 @@ public class Client {
                 }
             } catch (IOException e) {
                 System.err.println("Error in message recieving");
-                // e.printStackTrace();
             }
         }
     }

@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,12 +12,10 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.commons.httpclient.*;
-import org.apache.commons.httpclient.methods.*;
-import org.apache.commons.httpclient.params.HttpMethodParams;
+import javax.servlet.annotation.MultipartConfig;
 
 
+@MultipartConfig
 public class AddServlet extends HttpServlet {
     private BufferedReader in;
     private PrintWriter out;
@@ -65,13 +64,13 @@ public class AddServlet extends HttpServlet {
             addThread.start();
         }
         if (addThread != null) {
-            System.out.println(message);
             out.println(message);
             if (message.equals("/exit")) {
                 addThread.setStop();
             } else {
                 messages.add(message);
-                req.setAttribute("messages", messages);
+                ServletContext ctx=getServletContext();
+                ctx.setAttribute("messages", messages);
                 RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/add.jsp");
                 requestDispatcher.forward(req, resp);
             }
@@ -100,17 +99,7 @@ public class AddServlet extends HttpServlet {
                 while (!stoped) {
                     String str = in.readLine();
                     messages.add(str);
-
-//                    HttpClient httpclient = new HttpClient();
-//
-//                    GetMethod method = new GetMethod();
-//                    method.setPath("http://localhost:8082/chat_war_exploded/add");
-//
-//                    int statusCode = httpclient.executeMethod(method);
-//                    System.out.println("Status: " + statusCode);
-//
-//                    method.releaseConnection();
-
+                    getServletContext().setAttribute("messages",messages);
                 }
             } catch (IOException e) {
                 System.err.println("Error in message recieving");
@@ -119,3 +108,4 @@ public class AddServlet extends HttpServlet {
         }
     }
 }
+
