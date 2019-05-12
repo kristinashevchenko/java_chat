@@ -1,5 +1,9 @@
-Client$1.class
-Server.class
 Client$AddThread.class
 Client.class
-Server$Connection.class
+ChatRoom.class
+servlet\AddServlet.class
+servlet\AddServlet$1.class
+Connection.class
+Client$1.class
+Server.class
+servlet\AddServlet$AddThread.class
