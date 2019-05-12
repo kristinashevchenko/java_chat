@@ -8,7 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta http-equiv="refresh" content="18">
     <title>Chat Demo</title>
+
     <style>
         * {
             -webkit-box-sizing: border-box;
@@ -316,9 +318,10 @@
         <div class="chat-header">
             <h2>Chat Demo</h2>
         </div>
+
         <ul id="messageArea">
             <%
-                List<String> messages = (List<String>) request.getAttribute("messages");
+                List<String> messages = (List<String>) getServletConfig().getServletContext().getAttribute("messages");
 
                 if (messages != null && !messages.isEmpty()) {
                     for (String s : messages) {
@@ -327,7 +330,7 @@
                 }
             %>
         </ul>
-        <form id="messageForm" name="messageForm" method="post">
+        <form id="messageForm" name="messageForm" method="post" >
             <div class="form-group">
                 <div class="input-group clearfix">
                     <input type="text" name="message" id="message" placeholder="Type a message..." autocomplete="off"
